@@ -1,0 +1,13 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #ffffff;
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background-color: #323537;
+  }
+}
