@@ -1,0 +1,15 @@
+  .home-button {
+    padding: 12px 36px;
+    border: none;
+    border-radius: 22px;
+    background: #fabb2b;
+    color: #222c36;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: #ffd16c !important;
+    }
+  }

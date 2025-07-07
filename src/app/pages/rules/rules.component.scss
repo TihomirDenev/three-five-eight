@@ -1,3 +1,5 @@
+@import 'src/app/styles/home-button.scss';
+
 .info-page {
   max-width: 600px;
   margin: 48px auto;
@@ -27,6 +29,11 @@
     em {
       color: #fabb2b;
     }
+  }
+
+  .home-button {
+    display: block;
+    margin: 0 auto;
   }
 }
 

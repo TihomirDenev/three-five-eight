@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { Player } from 'src/app/models/player.model';
 import { GameService } from 'src/app/services/game.service';
@@ -9,7 +10,7 @@ import { GameService } from 'src/app/services/game.service';
   selector: 'app-player-setup',
   templateUrl: './player-setup.component.html',
   styleUrl: './player-setup.component.scss',
-  imports: [FormsModule]
+  imports: [FormsModule, TranslateModule]
 })
 export class PlayerSetupComponent implements OnInit {
   players: Player[] = [];
@@ -30,5 +31,9 @@ export class PlayerSetupComponent implements OnInit {
   startGame() {
     this.gameService.setPlayers(this.players);
     this.router.navigate(['/board']);
+  }
+
+  goToHome() {
+    this.router.navigate(['/']);
   }
 }
