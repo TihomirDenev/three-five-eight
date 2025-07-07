@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { Player } from 'src/app/models/player.model';
+import { GameService } from 'src/app/services/game.service';
 
 @Component({
   selector: 'app-player-setup',
@@ -13,7 +14,10 @@ import { Player } from 'src/app/models/player.model';
 export class PlayerSetupComponent implements OnInit {
   players: Player[] = [];
 
-  constructor(readonly router: Router) {}
+  constructor(
+    readonly router: Router,
+    readonly gameService: GameService,
+  ) {}
 
   ngOnInit() {
     this.players = [
@@ -24,6 +28,7 @@ export class PlayerSetupComponent implements OnInit {
   }
 
   startGame() {
+    this.gameService.setPlayers(this.players);
     this.router.navigate(['/board']);
   }
 }
