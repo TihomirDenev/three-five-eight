@@ -1,7 +1,67 @@
 {
+  "title": "Three Five Eight 🃏",
+  "buttons": {
+    "startGame": "🚀 Start Game",
+    "goBackHome": "🏠 Go Back Home",
+    "rules": "📜 Game Rules"
+  },
+  "playerSetup": {
+    "header": "Enter Your Names:",
+    "player3Label": "Player for 3 tricks:",
+    "player5Label": "Player for 5 tricks:",
+    "player8Label": "Player for 8 tricks (Dealer):"
+  },
   "notFound": {
     "header": "🔎 404 – Page Not Found",
-    "message": "Sorry, the page you're looking for doesn't exist or has been moved.",
-    "button": "🏠 Go Back Home"
+    "message": "Sorry, the page you're looking for doesn't exist or has been moved."
+  },
+  "home": {
+    "title": "3-5-8 Game Scorer",
+    "titleEmoji": "🃏",
+    "description": "<span aria-label='party' title='party'>🎉</span> Easily track players, roles, and points for the classic 3-5-8 (Sergeant Major) card game.<br />No more pen & paper—just play! <span aria-label='pencil' title='pencil'>✏️</span>"
+  },
+  "rules": {
+    "title": "How to Play 3-5-8 (Sergeant Major) 🃏",
+    "intro": "👥 The game is played by 3 players using a standard 52-card deck ranked A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2. Cards are dealt and played counterclockwise.",
+    "dealTitle": "🎲 Dealing",
+    "deal": "Each player is dealt 16 cards. The last 4 cards are placed face down as the kitty.",
+    "goalTitle": "🎯 Objective",
+    "goal": "Each player must try to win a set number of tricks, depending on their position:",
+    "rolesDealer": "🧑‍⚖️ Dealer (first): 8",
+    "rolesLeft": "⬅️ Player to the left: 5",
+    "rolesRight": "➡️ Player to the right: 3",
+    "postDeal": "After dealing, there is a declaration phase, card exchange, and kitty swap.",
+    "declareTitle": "📢 Declaration",
+    "declare1": "The player aiming for 8 tricks (first to play) must choose and declare the trump suit.",
+    "declare2": "Declarations: spades, hearts, clubs, diamonds, no trump, and pass. Each can pass only once per game.",
+    "declare3": "If the dealer passes, cards are redealt with the same player order.",
+    "swapTitle": "♻️ Card Exchange",
+    "swap1": "No card exchange in the first round.",
+    "swap2": "In subsequent rounds, any player who scored '+' gives a card for each point to a player with '-'.",
+    "swap3": "If the '-' player has a higher card in the requested suit, they must return their highest card in that suit. Otherwise, they return the card received.",
+    "swap4": "If two players are '+', the player with the higher quota exchanges first.",
+    "swap5": "No exchange when 'no trump' is declared.",
+    "kittyTitle": "🐾 Kitty",
+    "kitty": "The 4 kitty cards must be shown to all. The player with an objective of 8 takes the kitty and then returns any 4 cards face down (others do not see the returned cards).",
+    "playTitle": "🃏 Playing",
+    "play1": "Play is counterclockwise. The player aiming for 8 tricks starts.",
+    "play2": "Next hands: winner of previous trick leads.",
+    "play3": "First card can be any suit. Following players must follow suit. If they can't but have trump, they must play a trump. Otherwise, any card.",
+    "play4": "If the led suit is not trump, no need to play a stronger card.",
+    "play5": "If led suit is trump, players must play a higher trump if possible, else a lower one, else any card.",
+    "play6": "If the second player trumps and the third can't follow suit, the third must play a stronger trump if possible.",
+    "play7": "Trick is won by the highest trump, or if no trump, by the highest led suit.",
+    "play8": "In no trump, just follow suit—no trumping.",
+    "scoringTitle": "🧮 Scoring",
+    "scoring1": "After all 16 tricks, compare actual tricks won to the target for each player:",
+    "scoring2": "More than target: +1 for each extra trick.",
+    "scoring3": "Fewer than target: -1 for each missing trick.",
+    "scoring4": "Example: Target 3, win 5: +2 points. Target 3, win 1: -2 points.",
+    "endTitle": "🏁 End of Game",
+    "end1": "Game ends after 9 deals. Winner is the player with the highest score.",
+    "end2": "If tied, winner is the one with more points in the last deal.",
+    "end3": "If all are tied, the last deal winner wins.",
+    "end4": "If two are tied, the most recent deal winner wins.",
+    "footer": "✨ This app helps you track scores, roles, and rounds with ease!"
   }
 }

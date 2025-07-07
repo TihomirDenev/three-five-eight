@@ -1,76 +1,90 @@
-@import 'src/app/styles/home-button.scss';
+@use 'src/app/styles/home-button.scss';
 
-.setup-form {
+.player-setup {
   display: flex;
-  gap: 1.5rem;
-  flex-direction: column;
-  max-width: 320px;
-  margin: 60px auto;
-  padding: 32px;
-  border-radius: 18px;
-  background: #2f3a45;
-  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.10);
-
-  label {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    color: #f9fafb;
-    font-size: 1.12rem;
-    font-weight: 500;
-  }
-
-  input {
-    padding: 10px 14px;
-    border: 1px solid #4186f6;
-    border-radius: 10px;
-    background: #222c36;
-    color: #f9fafb;
-    font-size: 1rem;
-    transition: border-color 0.13s;
-
-    &:focus {
-      border-color: #fabb2b;
-      outline: none;
-    }
-  }
-}
-
-.buttons {
-  display: flex;
-  gap: 1.3rem;
+  align-items: center;
+  gap: 0.5rem;
   flex-direction: column;
   justify-content: center;
-  max-width: 320px;
-  margin: 2rem;
+  color: #f9fafb;
 
-  .start-btn {
-    margin-top: 0;
-    padding: 10px 0;
-    border: none;
-    border-radius: 22px;
-    background: #4186f6;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.18s;
-    flex: 1 1 0;
+  h2 {
+    color: #4186f6;
+  }
 
-    &:hover {
-      background: #1e4fa2;
+  .setup-form {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 18px;
+    background: #2f3a45;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.10);
+
+    label {
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      color: #f9fafb;
+      font-size: 1.12rem;
+      font-weight: 500;
     }
 
-    &:disabled {
-      cursor: not-allowed;
-      opacity: 0.6;
+    input {
+      padding: 10px 14px;
+      border: 1px solid #4186f6;
+      border-radius: 10px;
+      background: #222c36;
+      color: #f9fafb;
+      font-size: 1rem;
+      transition: border-color 0.13s;
+
+      &:focus {
+        border-color: #fabb2b;
+        outline: none;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+    margin: 2rem;
+
+    .start-btn {
+      margin-top: 0;
+      padding: 10px 0;
+      border: none;
+      border-radius: 22px;
+      background: #4186f6;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s;
+      flex: 1 1 0;
+
+      &:hover {
+        background: #1e4fa2;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
     }
   }
 }
 
 @media (max-width: 500px) {
+  h2 {
+    margin-top: 3rem;
+  }
+
   .setup-form {
-    max-width: 99vw;
     margin: 18px 1vw 0 1vw;
     padding: 18px 4vw;
     border-radius: 10px;

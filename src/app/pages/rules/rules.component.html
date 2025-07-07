@@ -1,35 +1,49 @@
 <div class="info-page">
-  <h1>How to Play 3-5-8 (Sergeant Major) 🃏</h1>
-  <p><strong>👥 Players:</strong> 3 players, standard 52-card deck.</p>
-  <p>
-    <strong>🎲 Deal:</strong> Each gets 16 cards; the dealer picks up and
-    discards 4 from the kitty.
-  </p>
-  <p>
-    <strong>🎯 Roles:</strong><br />
-    &nbsp;&nbsp;• Dealer needs <strong>8</strong> tricks<br />
-    &nbsp;&nbsp;• Second player needs <strong>5</strong> tricks<br />
-    &nbsp;&nbsp;• Third player needs <strong>3</strong> tricks
-  </p>
-  <p>
-    <strong>🃏 Play:</strong> Dealer calls trump. Play tricks, follow suit if
-    possible.
-  </p>
-  <p>
-    <strong>🧮 Scoring:</strong> Each trick over quota is
-    <span style="color: #00c853">+1</span>, under is
-    <span style="color: #ff5252">-1</span>. Totals update after each round.
-  </p>
-  <p>
-    <strong>♻️ Card Exchange:</strong> Winners of extra tricks give lowest cards
-    to those under, receive their highest.
-  </p>
-  <p><strong>🔄 Rotate:</strong> Roles and dealer rotate each round.</p>
+  <h1>{{ "rules.title" | translate }}</h1>
+  <p>{{ "rules.intro" | translate }}</p>
+  <h2>{{ "rules.dealTitle" | translate }}</h2>
+  <p>{{ "rules.deal" | translate }}</p>
+  <h2>{{ "rules.goalTitle" | translate }}</h2>
+  <p>{{ "rules.goal" | translate }}</p>
+  <p class="highlight">{{ "rules.rolesDealer" | translate }}</p>
+  <p class="highlight">{{ "rules.rolesLeft" | translate }}</p>
+  <p class="highlight">{{ "rules.rolesRight" | translate }}</p>
+  <p>{{ "rules.postDeal" | translate }}</p>
+  <h2>{{ "rules.declareTitle" | translate }}</h2>
+  <p>{{ "rules.declare1" | translate }}</p>
+  <p>{{ "rules.declare2" | translate }}</p>
+  <p>{{ "rules.declare3" | translate }}</p>
+  <h2>{{ "rules.swapTitle" | translate }}</h2>
+  <p>{{ "rules.swap1" | translate }}</p>
+  <p>{{ "rules.swap2" | translate }}</p>
+  <p>{{ "rules.swap3" | translate }}</p>
+  <p>{{ "rules.swap4" | translate }}</p>
+  <p>{{ "rules.swap5" | translate }}</p>
+  <h2>{{ "rules.kittyTitle" | translate }}</h2>
+  <p>{{ "rules.kitty" | translate }}</p>
+  <h2>{{ "rules.playTitle" | translate }}</h2>
+  <p>{{ "rules.play1" | translate }}</p>
+  <p>{{ "rules.play2" | translate }}</p>
+  <p>{{ "rules.play3" | translate }}</p>
+  <p>{{ "rules.play4" | translate }}</p>
+  <p>{{ "rules.play5" | translate }}</p>
+  <p>{{ "rules.play6" | translate }}</p>
+  <p>{{ "rules.play7" | translate }}</p>
+  <p>{{ "rules.play8" | translate }}</p>
+  <h2>{{ "rules.scoringTitle" | translate }}</h2>
+  <p>{{ "rules.scoring1" | translate }}</p>
+  <p>{{ "rules.scoring2" | translate }}</p>
+  <p>{{ "rules.scoring3" | translate }}</p>
+  <p>{{ "rules.scoring4" | translate }}</p>
+  <h2>{{ "rules.endTitle" | translate }}</h2>
+  <p>{{ "rules.end1" | translate }}</p>
+  <p>{{ "rules.end2" | translate }}</p>
+  <p>{{ "rules.end3" | translate }}</p>
+  <p>{{ "rules.end4" | translate }}</p>
   <p style="margin-top: 2rem; font-size: 1rem">
-    <em>✨ This app helps you track scores, roles, and rounds with ease!</em>
+    <em>{{ "rules.footer" | translate }}</em>
   </p>
-
   <button class="home-button" (click)="goToHome()">
-    {{ "notFound.button" | translate }}
+    {{ "buttons.goBackHome" | translate }}
   </button>
 </div>

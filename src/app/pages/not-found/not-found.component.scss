@@ -1,4 +1,4 @@
-@import 'src/app/styles/home-button.scss';
+@use 'src/app/styles/home-button.scss';
 
 .page-wrapper {
   display: flex;
@@ -19,5 +19,23 @@
     margin-bottom: 36px;
     font-size: 1.25rem;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      margin-bottom: 18px;
+      padding: 0 4vw;
+      font-size: 1rem;
+    }
   }
 }

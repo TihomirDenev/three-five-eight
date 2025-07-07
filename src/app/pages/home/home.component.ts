@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  // imports: [TranslateModule], // Add if you need translations
+  imports: [TranslateModule],
 })
 export class HomeComponent {
   constructor(readonly router: Router) {}

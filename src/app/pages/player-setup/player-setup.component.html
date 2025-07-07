@@ -1,26 +1,34 @@
-<form (ngSubmit)="startGame()" #playerForm="ngForm" class="setup-form">
-  <label>
-    Player for 3 tricks:
-    <input name="player3" [(ngModel)]="players[0].name" required />
-  </label>
+<div class="player-setup">
+  <h2>{{ "playerSetup.header" | translate }}</h2>
 
-  <label>
-    Player for 5 tricks:
-    <input name="player5" [(ngModel)]="players[1].name" required />
-  </label>
+  <form #playerForm="ngForm" class="setup-form">
+    <label>
+      {{ "playerSetup.player3Label" | translate }}
+      <input name="player3" [(ngModel)]="players[0].name" required />
+    </label>
 
-  <label>
-    Player for 8 tricks (Dealer):
-    <input name="player8" [(ngModel)]="players[2].name" required />
-  </label>
-</form>
+    <label>
+      {{ "playerSetup.player5Label" | translate }}
+      <input name="player5" [(ngModel)]="players[1].name" required />
+    </label>
 
-<div class="buttons">
-  <button type="submit" [disabled]="!playerForm.valid" class="start-btn">
-    🚀 Start Game
-  </button>
+    <label>
+      {{ "playerSetup.player8Label" | translate }}
+      <input name="player8" [(ngModel)]="players[2].name" required />
+    </label>
+  </form>
 
-  <button class="home-button" (click)="goToHome()">
-    {{ "notFound.button" | translate }}
-  </button>
+  <div class="buttons">
+    <button
+      [disabled]="!playerForm.valid"
+      class="start-btn"
+      (click)="startGame()"
+    >
+      {{ "buttons.startGame" | translate }}
+    </button>
+
+    <button class="home-button" (click)="goToHome()">
+      {{ "buttons.goBackHome" | translate }}
+    </button>
+  </div>
 </div>
