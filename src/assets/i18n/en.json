@@ -1,0 +1,7 @@
+{
+  "notFound": {
+    "header": "🔎 404 – Page Not Found",
+    "message": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "button": "🏠 Go Back Home"
+  }
+}
