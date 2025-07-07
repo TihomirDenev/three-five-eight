@@ -1,17 +1,12 @@
 <header class="header">
+  <h2 (click)="goToHome()">Three Five Eight</h2>
+
   <div class="language-selector">
-    <button
-      class="language-btn"
-      (click)="translateText('bg')"
-      aria-label="Switch to Bulgarian"
-    >
+    <button class="language-btn" (click)="translateText('bg')">
       <img src="assets/images/flags/bg.svg" alt="Bulgarian flag" />
     </button>
-    <button
-      class="language-btn"
-      (click)="translateText('en')"
-      aria-label="Switch to English"
-    >
+
+    <button class="language-btn" (click)="translateText('en')">
       <img src="assets/images/flags/gb.svg" alt="British flag" />
     </button>
   </div>

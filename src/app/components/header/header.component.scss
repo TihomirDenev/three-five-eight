@@ -6,6 +6,10 @@
   border-bottom: 1px solid #f5d774;
   background-color: #262828;
 
+  h2 {
+    cursor: pointer;
+  }
+
   .language-selector {
     display: flex;
     gap: 8px;
@@ -26,5 +30,13 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    text-align: left;
   }
 }
