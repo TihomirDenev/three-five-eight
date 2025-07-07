@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f5d774;
+  background-color: #262828;
+
+  .language-selector {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+
+    .language-btn {
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      img {
+        display: block;
+        width: 27px;
+        height: 20px;
+        border: 1px solid rgb(182, 176, 176);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
