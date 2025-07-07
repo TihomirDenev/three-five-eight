@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
+
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',
   styleUrl: './not-found.component.scss',
-  imports: [TranslateModule, RouterModule],
+  imports: [TranslateModule],
 })
 export class NotFoundComponent {
-  navigateHome() {
-    window.location.href = '/';
+  constructor(readonly router: Router) {}
+
+  goToHome() {
+    this.router.navigate(['/']);
   }
 }
