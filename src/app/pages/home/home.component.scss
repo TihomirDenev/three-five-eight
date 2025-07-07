@@ -1,0 +1,130 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 60px;
+  padding: 40px 16px;
+  border-radius: 18px;
+  background: #2f3a45;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+
+  .app-logo {
+    width: 80px;
+    margin-bottom: 18px;
+    padding: 8px;
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  h1 {
+    margin: 0;
+    color: #4186f6;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+
+    span {
+      font-size: 1.5em;
+      vertical-align: middle;
+    }
+  }
+
+  p {
+    margin-bottom: 32px;
+    font-size: 1.13rem;
+    line-height: 1.7;
+    text-align: center;
+    opacity: 0.92;
+
+    span {
+      margin: 0 3px;
+      font-size: 1.2em;
+      vertical-align: middle;
+    }
+  }
+
+  .home-actions {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 10px;
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.6em;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 12px;
+      background: #4186f6;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.16s, transform 0.13s;
+      box-shadow: 0 1px 8px rgba(65, 134, 246, 0.09);
+
+      &:hover,
+      &:focus {
+        background: #1e4fa2;
+        transform: translateY(-2px) scale(1.04);
+      }
+
+      span {
+        font-size: 1.2em;
+      }
+
+      &.rules-btn {
+        background: #fabb2b;
+        color: #222c36;
+        box-shadow: 0 1px 8px rgba(250, 187, 43, 0.10);
+
+        &:hover,
+        &:focus {
+          background: #ffd16c;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home-container {
+    margin: 24px;
+    padding: 2rem;
+
+    a {
+      margin-right: 0 !important;
+    }
+
+    h1 {
+      font-size: 1.35rem;
+
+      span {
+        font-size: 1.2em;
+      }
+    }
+
+    p {
+      margin-bottom: 22px;
+      font-size: 0.98rem;
+
+      span {
+        font-size: 1.05em;
+      }
+    }
+
+    .home-actions {
+      gap: 0.8rem;
+      flex-direction: column;
+
+      button {
+        justify-content: center;
+        width: 9rem;
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+  }
+}

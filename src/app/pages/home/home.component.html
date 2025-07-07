@@ -1,1 +1,19 @@
-<p>Home</p>
+<div class="home-container">
+  <img src="assets/images/logo.png" alt="App Logo" class="app-logo" />
+  <h1>3-5-8 Game Scorer <span aria-label="cards" title="cards">🃏</span></h1>
+  <p>
+    <span aria-label="party" title="party">🎉</span>
+    Easily track players, roles, and points for the classic 3-5-8 (Sergeant
+    Major) card game.<br />
+    No more pen & paper—just play!
+    <span aria-label="pencil" title="pencil">✏️</span>
+  </p>
+  <div class="home-actions">
+    <button (click)="goToPlayers()">
+      <span aria-label="start" title="start">🚀</span> Start Game
+    </button>
+    <button class="rules-btn" (click)="goToRules()">
+      <span aria-label="info" title="info">📖</span> Rules
+    </button>
+  </div>
+</div>
