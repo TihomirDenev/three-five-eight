@@ -1,11 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-game-board',
+  selector: "app-game-board",
   imports: [],
-  templateUrl: './game-board.component.html',
-  styleUrl: './game-board.component.scss'
+  templateUrl: "./game-board.component.html",
+  styleUrl: "./game-board.component.scss",
 })
-export class GameBoardComponent {
-
-}
+export class GameBoardComponent {}
