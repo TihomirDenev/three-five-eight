@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
-import { Player } from 'src/app/models/player.model';
+import { Player } from "src/app/models/player.model";
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class GameService {
   private players: Player[] = [];
 
