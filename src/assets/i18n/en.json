@@ -66,5 +66,16 @@
     "end3": "If all are tied, the last deal winner wins.",
     "end4": "If two are tied, the most recent deal winner wins.",
     "footer": "✨ This app helps you track scores, roles, and rounds with ease!"
+  },
+  "gameBoard": {
+    "round": "Round",
+    "name": "Name",
+    "quota": "Quota",
+    "points": "Points",
+    "total": "Total",
+    "nextRound": "Next Round",
+    "finish": "Finish",
+    "winner": "Winner!",
+    "newGame": "New Game"
   }
 }

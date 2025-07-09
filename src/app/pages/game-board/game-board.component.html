@@ -1,17 +1,17 @@
 <div class="game-board">
   <div class="board-header">
     <img src="assets/images/logo.png" alt="" />
-    <h2>Round {{ currentRound }} / 9</h2>
+    <h2>{{ "gameBoard.round" | translate }} {{ currentRound }} / 9</h2>
     <img src="assets/images/logo.png" alt="" />
   </div>
 
   <table class="players-table">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Quota</th>
-        <th>Points</th>
-        <th>Total</th>
+        <th>{{ "gameBoard.name" | translate }}</th>
+        <th>{{ "gameBoard.quota" | translate }}</th>
+        <th>{{ "gameBoard.points" | translate }}</th>
+        <th>{{ "gameBoard.total" | translate }}</th>
       </tr>
     </thead>
     <tbody>
@@ -46,7 +46,7 @@
       (click)="startNextRound()"
       class="primary-button"
     >
-      Next Round
+      {{ "gameBoard.nextRound" | translate }}
     </button>
     <button
       *ngIf="currentRound === 9 && !gameOver"
@@ -54,7 +54,7 @@
       (click)="finishGame()"
       class="secondary-button"
     >
-      🏁 Finish
+      🏁 {{ "gameBoard.finish" | translate }}
     </button>
   </div>
 </div>
@@ -62,10 +62,10 @@
 <div *ngIf="gameOver" class="winner-modal">
   <div class="winner-card">
     <img src="assets/images/trophy.webp" alt="Trophy" class="winner-trophy" />
-    <div class="winner-label">Winner!</div>
+    <div class="winner-label">{{ "gameBoard.winner" | translate }}</div>
     <div class="winner-name">{{ winnerName | titlecase }}</div>
     <button type="button" (click)="newGame()" class="secondary-button">
-      🔄 New Game
+      🔄 {{ "gameBoard.newGame" | translate }}
     </button>
   </div>
 </div>

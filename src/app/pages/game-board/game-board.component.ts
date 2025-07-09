@@ -2,6 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 
+import { TranslateModule } from "@ngx-translate/core";
+
 import { Player } from "src/app/models/player.model";
 import { GameService } from "src/app/services/game.service";
 import { rotatePlayerQuotas, getWinnerName, calculateRoundPoints } from "src/app/helpers/game-logic";
@@ -10,7 +12,7 @@ import { rotatePlayerQuotas, getWinnerName, calculateRoundPoints } from "src/app
   selector: "app-game-board",
   templateUrl: "./game-board.component.html",
   styleUrl: "./game-board.component.scss",
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
 })
 export class GameBoardComponent implements OnInit {
   players: Player[] = [];
