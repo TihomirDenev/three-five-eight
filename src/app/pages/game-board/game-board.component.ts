@@ -16,7 +16,7 @@ import { rotatePlayerQuotas, getWinnerName, calculateRoundPoints } from "src/app
 })
 export class GameBoardComponent implements OnInit {
   players: Player[] = [];
-  tricksWonThisRound: number[] = [];
+  tricksWonThisRound: (number | null)[] = [];
   totalPointsPerPlayer: number[] = [];
   currentRound: number = 1;
   roundPointsHistory: number[][] = [];
@@ -26,7 +26,7 @@ export class GameBoardComponent implements OnInit {
   constructor(private readonly gameService: GameService) {}
 
   get canProceedToNextRound(): boolean {
-    return this.tricksWonThisRound.reduce((a, b) => a + b, 0) === 16;
+    return (this.tricksWonThisRound as number[]).reduce((a, b) => a + b, 0) === 16;
   }
 
   ngOnInit(): void {
@@ -45,7 +45,7 @@ export class GameBoardComponent implements OnInit {
 
     rotatePlayerQuotas(this.players);
     this.currentRound++;
-    this.tricksWonThisRound = [0, 0, 0];
+    this.tricksWonThisRound = Array(this.players.length).fill(null);
   }
 
   finishGame(): void {
@@ -62,8 +62,8 @@ export class GameBoardComponent implements OnInit {
   }
 
   private resetGameState(): void {
-    this.tricksWonThisRound = [0, 0, 0];
-    this.totalPointsPerPlayer = [0, 0, 0];
+    this.tricksWonThisRound = Array(this.players.length).fill(null);
+    this.totalPointsPerPlayer = Array(this.players.length).fill(0);
     this.currentRound = 1;
     this.roundPointsHistory = [];
     this.gameOver = false;
@@ -71,7 +71,9 @@ export class GameBoardComponent implements OnInit {
   }
 
   private recordRoundPoints(): void {
-    const roundPoints = calculateRoundPoints(this.players, this.tricksWonThisRound);
+    if (!this.canProceedToNextRound) return;
+
+    const roundPoints = calculateRoundPoints(this.players, this.tricksWonThisRound as number[]);
     
     this.roundPointsHistory.push([...roundPoints]);
     this.players.forEach((player, i) => {
