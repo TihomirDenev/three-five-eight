@@ -69,10 +69,10 @@
   },
   "gameBoard": {
     "round": "Round",
-    "name": "Player Name",
+    "name": "Name",
     "quota": "Goal",
     "points": "Tricks Won",
-    "total": "Total Points",
+    "total": "Total",
     "nextRound": "Next Round ➡️",
     "finish": "Finish 🏁",
     "winner": "Winner!",
