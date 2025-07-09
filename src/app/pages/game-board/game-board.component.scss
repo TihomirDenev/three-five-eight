@@ -1,0 +1,83 @@
+@use 'src/app/styles/buttons.scss';
+@use 'src/app/styles/input.scss';
+
+.game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  .board-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  img {
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  h2 {
+    margin: 0;
+    color: #4186f6;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .players-table {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+    border-collapse: collapse;
+
+
+    th,
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid #323537;
+      background: #222c36;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    th {
+      background: #4186f6;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .game-board {
+    .board-header {
+      gap: 0.7rem;
+    }
+
+    h2 {
+      width: 8rem;
+      font-size: 1.2rem;
+    }
+
+    .players-table {
+      font-size: 0.95rem;
+
+      th {
+        padding: 0.8rem 0.8rem;
+      }
+
+      td {
+        padding: 2rem 0.8rem;
+      }
+    }
+  }
+}

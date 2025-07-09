@@ -1,1 +1,70 @@
-<p>game-board works!</p>
+<div class="game-board">
+  <div class="board-header">
+    <img src="assets/images/logo.png" alt="" />
+    <h2>Round {{ currentRound }} / 9</h2>
+    <img src="assets/images/logo.png" alt="" />
+  </div>
+
+  <table class="players-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Quota</th>
+        <th>Points</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players; let i = index">
+        <td>{{ player.name | titlecase }}</td>
+        <td>
+          <span [ngClass]="{ 'dealer-badge': player.quota === 8 }"
+            >{{ player.quota }}
+          </span>
+        </td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            max="16"
+            [(ngModel)]="tricksWonThisRound[i]"
+            name="tricks{{ i }}"
+            required
+          />
+        </td>
+        <td>
+          {{ totalPointsPerPlayer[i] }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="table-actions">
+    <button
+      *ngIf="currentRound < 9 && !gameOver"
+      type="button"
+      (click)="startNextRound()"
+      class="primary-button"
+    >
+      Next Round
+    </button>
+    <button
+      *ngIf="currentRound === 9 && !gameOver"
+      type="button"
+      (click)="finishGame()"
+      class="secondary-button"
+    >
+      🏁 Finish
+    </button>
+  </div>
+
+  <div *ngIf="gameOver" class="game-finished">
+    <h3>Game Over!</h3>
+    <div>
+      Winner: <strong>{{ winnerName }}</strong>
+    </div>
+    <button type="button" (click)="newGame()" class="secondary-button">
+      🔄 New Game
+    </button>
+  </div>
+</div>
