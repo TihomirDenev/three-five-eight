@@ -7,9 +7,12 @@
   },
   "playerSetup": {
     "header": "Enter Your Names:",
-    "player3Label": "Player for 3 tricks (Deals):",
-    "player5Label": "Player for 5 tricks (Split):",
-    "player8Label": "Player for 8 tricks (Dealer):"
+    "playerOnePlaceholder": "First Player Name",
+    "playerTwoPlaceholder": "Second Player Name",
+    "playerThreePlaceholder": "Third Player Name",
+    "player3Label": "👤 First Player:",
+    "player5Label": "👤 Second Player:",
+    "player8Label": "👤 Third Player:"
   },
   "notFound": {
     "header": "🔎 404 – Page Not Found",
