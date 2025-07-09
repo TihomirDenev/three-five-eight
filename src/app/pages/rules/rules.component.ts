@@ -14,7 +14,6 @@ import { RULES_SECTIONS } from "src/app/pages/rules/rules.data";
 })
 export class RulesComponent {
   rulesSections = RULES_SECTIONS;
-  footerKey = 'rules.footer';
 
   constructor(readonly router: Router) {}
 

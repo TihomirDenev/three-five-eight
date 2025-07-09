@@ -6,8 +6,15 @@
   border-bottom: 1px solid #f5d774;
   background-color: #262828;
 
-  h2 {
+  .logo {
+    display: flex;
+    align-items: center;
     cursor: pointer;
+
+    img {
+      width: 2.5rem;
+      margin-right: 0.7rem;
+    }
   }
 
   .language-selector {
@@ -17,14 +24,11 @@
 
     .language-btn {
       padding: 0;
-      border: none;
       background: none;
-      cursor: pointer;
 
       img {
         display: block;
         width: 27px;
-        height: 20px;
         border: 1px solid rgb(182, 176, 176);
         border-radius: 4px;
         cursor: pointer;
@@ -35,8 +39,6 @@
 
 @media (max-width: 500px) {
   h2 {
-    margin-bottom: 10px;
     font-size: 1.3rem;
-    text-align: left;
   }
 }

@@ -1,5 +1,8 @@
 <header class="header">
-  <h2 (click)="goToHome()">{{ "title" | translate }}</h2>
+  <div (click)="goToHome()" class="logo">
+    <img src="assets/images/cards.png" alt="Cards" />
+    <h2>{{ "title" | translate }}</h2>
+  </div>
 
   <div class="language-selector">
     <button class="language-btn" (click)="translateText('bg')">

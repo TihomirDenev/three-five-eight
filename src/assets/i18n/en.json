@@ -1,5 +1,5 @@
 {
-  "title": "Three Five Eight 🃏",
+  "title": "Three Five Eight",
   "buttons": {
     "startGame": "🚀 Start Game",
     "goBackHome": "🏠 Go Back Home",
@@ -15,7 +15,7 @@
     "player8Label": "👤 Third Player:"
   },
   "notFound": {
-    "header": "🔎 404 – Page Not Found",
+    "header": "🔎 Page Not Found",
     "message": "Sorry, the page you're looking for doesn't exist or has been moved."
   },
   "home": {
