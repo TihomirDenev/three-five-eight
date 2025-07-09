@@ -57,12 +57,13 @@
       🏁 Finish
     </button>
   </div>
+</div>
 
-  <div *ngIf="gameOver" class="game-finished">
-    <h3>Game Over!</h3>
-    <div>
-      Winner: <strong>{{ winnerName }}</strong>
-    </div>
+<div *ngIf="gameOver" class="winner-modal">
+  <div class="winner-card">
+    <img src="assets/images/trophy.webp" alt="Trophy" class="winner-trophy" />
+    <div class="winner-label">Winner!</div>
+    <div class="winner-name">{{ winnerName | titlecase }}</div>
     <button type="button" (click)="newGame()" class="secondary-button">
       🔄 New Game
     </button>
