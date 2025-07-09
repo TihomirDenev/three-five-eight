@@ -24,12 +24,13 @@
 
     .language-btn {
       padding: 0;
+      border: none;
       background: none;
 
       img {
         display: block;
         width: 27px;
-        border: 1px solid rgb(182, 176, 176);
+        border: 1.5px solid rgb(182, 182, 182);
         border-radius: 4px;
         cursor: pointer;
       }
