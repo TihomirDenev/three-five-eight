@@ -1,0 +1,19 @@
+.main-card {
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 48px;
+  padding: 32px 24px;
+  border-radius: 18px;
+  background: #2f3a45;
+  color: #f9fafb;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 500px) {
+  .main-card {
+    margin: 1.8rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+}

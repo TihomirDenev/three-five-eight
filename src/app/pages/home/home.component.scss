@@ -1,15 +1,9 @@
 @use 'src/app/styles/buttons.scss';
+@use 'src/app/styles/main-card.scss';
 
-.home-container {
+.main-card {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  max-width: 400px;
-  margin: 60px;
-  padding: 40px 16px;
-  border-radius: 18px;
-  background: #2f3a45;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
 
   .app-logo {
     width: 80px;
@@ -52,13 +46,11 @@
     gap: 1.5rem;
     margin-top: 10px;
   }
+
 }
 
 @media (max-width: 500px) {
-  .home-container {
-    margin: 24px;
-    padding: 2rem;
-
+  .main-card {
     a {
       margin-right: 0 !important;
     }

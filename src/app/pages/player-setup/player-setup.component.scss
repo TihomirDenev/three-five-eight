@@ -1,3 +1,4 @@
+@use 'src/app/styles/main-card.scss';
 @use 'src/app/styles/buttons.scss';
 @use 'src/app/styles/input.scss';
 
@@ -13,14 +14,11 @@
     color: #4186f6;
   }
 
-  .setup-form {
+  .main-card {
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
-    padding: 32px;
-    border-radius: 18px;
-    background: #2f3a45;
-    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.10);
+    text-align: center;
 
     label {
       display: flex;
