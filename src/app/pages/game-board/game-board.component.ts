@@ -25,6 +25,10 @@ export class GameBoardComponent implements OnInit {
 
   constructor(private readonly gameService: GameService) {}
 
+  get canProceedToNextRound(): boolean {
+    return this.tricksWonThisRound.reduce((a, b) => a + b, 0) === 16;
+  }
+
   ngOnInit(): void {
     this.loadPlayers();
     this.resetGameState();

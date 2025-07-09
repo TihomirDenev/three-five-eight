@@ -45,6 +45,7 @@
       type="button"
       (click)="startNextRound()"
       class="primary-button"
+      [disabled]="!canProceedToNextRound"
     >
       {{ "gameBoard.nextRound" | translate }}
     </button>
@@ -53,8 +54,9 @@
       type="button"
       (click)="finishGame()"
       class="secondary-button"
+      [disabled]="!canProceedToNextRound"
     >
-      🏁 {{ "gameBoard.finish" | translate }}
+      {{ "gameBoard.finish" | translate }}
     </button>
   </div>
 </div>
@@ -65,7 +67,7 @@
     <div class="winner-label">{{ "gameBoard.winner" | translate }}</div>
     <div class="winner-name">{{ winnerName | titlecase }}</div>
     <button type="button" (click)="newGame()" class="secondary-button">
-      🔄 {{ "gameBoard.newGame" | translate }}
+      {{ "gameBoard.newGame" | translate }}
     </button>
   </div>
 </div>
