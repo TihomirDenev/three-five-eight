@@ -1,48 +1,20 @@
 <div class="info-page">
   <h1>{{ "rules.title" | translate }}</h1>
   <p>{{ "rules.intro" | translate }}</p>
-  <h2>{{ "rules.dealTitle" | translate }}</h2>
-  <p>{{ "rules.deal" | translate }}</p>
-  <h2>{{ "rules.goalTitle" | translate }}</h2>
-  <p>{{ "rules.goal" | translate }}</p>
-  <p class="highlight">{{ "rules.rolesDealer" | translate }}</p>
-  <p class="highlight">{{ "rules.rolesLeft" | translate }}</p>
-  <p class="highlight">{{ "rules.rolesRight" | translate }}</p>
-  <p>{{ "rules.postDeal" | translate }}</p>
-  <h2>{{ "rules.declareTitle" | translate }}</h2>
-  <p>{{ "rules.declare1" | translate }}</p>
-  <p>{{ "rules.declare2" | translate }}</p>
-  <p>{{ "rules.declare3" | translate }}</p>
-  <h2>{{ "rules.swapTitle" | translate }}</h2>
-  <p>{{ "rules.swap1" | translate }}</p>
-  <p>{{ "rules.swap2" | translate }}</p>
-  <p>{{ "rules.swap3" | translate }}</p>
-  <p>{{ "rules.swap4" | translate }}</p>
-  <p>{{ "rules.swap5" | translate }}</p>
-  <h2>{{ "rules.kittyTitle" | translate }}</h2>
-  <p>{{ "rules.kitty" | translate }}</p>
-  <h2>{{ "rules.playTitle" | translate }}</h2>
-  <p>{{ "rules.play1" | translate }}</p>
-  <p>{{ "rules.play2" | translate }}</p>
-  <p>{{ "rules.play3" | translate }}</p>
-  <p>{{ "rules.play4" | translate }}</p>
-  <p>{{ "rules.play5" | translate }}</p>
-  <p>{{ "rules.play6" | translate }}</p>
-  <p>{{ "rules.play7" | translate }}</p>
-  <p>{{ "rules.play8" | translate }}</p>
-  <h2>{{ "rules.scoringTitle" | translate }}</h2>
-  <p>{{ "rules.scoring1" | translate }}</p>
-  <p>{{ "rules.scoring2" | translate }}</p>
-  <p>{{ "rules.scoring3" | translate }}</p>
-  <p>{{ "rules.scoring4" | translate }}</p>
-  <h2>{{ "rules.endTitle" | translate }}</h2>
-  <p>{{ "rules.end1" | translate }}</p>
-  <p>{{ "rules.end2" | translate }}</p>
-  <p>{{ "rules.end3" | translate }}</p>
-  <p>{{ "rules.end4" | translate }}</p>
+
+  <ng-container *ngFor="let section of rulesSections">
+    <h2>{{ section.title | translate }}</h2>
+    <ng-container *ngFor="let paraKey of section.paragraphs">
+      <p [class.highlight]="section.highlight?.includes(paraKey)">
+        {{ paraKey | translate }}
+      </p>
+    </ng-container>
+  </ng-container>
+
   <p style="margin-top: 2rem; font-size: 1rem">
-    <em>{{ "rules.footer" | translate }}</em>
+    <em>{{ footerKey | translate }}</em>
   </p>
+
   <button class="secondary-button" (click)="goToHome()">
     {{ "buttons.goBackHome" | translate }}
   </button>
