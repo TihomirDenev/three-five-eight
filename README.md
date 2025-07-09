@@ -1,4 +1,3 @@
-<!-- Logo -->
 <p align="center">
   <img src="src/assets/images/logo.png" alt="Three Five Eight Logo" width="120" />
 </p>
