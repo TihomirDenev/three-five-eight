@@ -73,9 +73,9 @@
     "quota": "Quota",
     "points": "Points",
     "total": "Total",
-    "nextRound": "Next Round",
-    "finish": "Finish",
+    "nextRound": "Next Round ➡️",
+    "finish": "Finish 🏁",
     "winner": "Winner!",
-    "newGame": "New Game"
+    "newGame": "New Game 🎲"
   }
 }
