@@ -4,21 +4,36 @@
   <form #playerForm="ngForm" class="setup-form">
     <label>
       {{ "playerSetup.player3Label" | translate }}
-      <input name="player3" [(ngModel)]="players[0].name" required />
+      <input
+        name="player3"
+        [(ngModel)]="players[0].name"
+        required
+        placeholder="{{ 'playerSetup.playerOnePlaceholder' | translate }}"
+      />
     </label>
 
     <label>
       {{ "playerSetup.player5Label" | translate }}
-      <input name="player5" [(ngModel)]="players[1].name" required />
+      <input
+        name="player5"
+        [(ngModel)]="players[1].name"
+        required
+        placeholder="{{ 'playerSetup.playerTwoPlaceholder' | translate }}"
+      />
     </label>
 
     <label>
       {{ "playerSetup.player8Label" | translate }}
-      <input name="player8" [(ngModel)]="players[2].name" required />
+      <input
+        name="player8"
+        [(ngModel)]="players[2].name"
+        required
+        placeholder="{{ 'playerSetup.playerThreePlaceholder' | translate }}"
+      />
     </label>
   </form>
 
-  <div class="buttons">
+  <div class="buttons-container">
     <button
       [disabled]="!playerForm.valid"
       class="primary-button"
