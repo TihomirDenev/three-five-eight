@@ -10,11 +10,11 @@
   <p [innerHTML]="'home.description' | translate"></p>
 
   <div class="home-actions">
-    <button (click)="goToPlayers()">
+    <button class="primary-button button" (click)="goToPlayers()">
       {{ "buttons.startGame" | translate }}
     </button>
 
-    <button class="rules-btn" (click)="goToRules()">
+    <button class="secondary-button button" (click)="goToRules()">
       {{ "buttons.rules" | translate }}
     </button>
   </div>

@@ -21,13 +21,13 @@
   <div class="buttons">
     <button
       [disabled]="!playerForm.valid"
-      class="start-btn"
+      class="primary-button"
       (click)="startGame()"
     >
       {{ "buttons.startGame" | translate }}
     </button>
 
-    <button class="home-button" (click)="goToHome()">
+    <button class="secondary-button" (click)="goToHome()">
       {{ "buttons.goBackHome" | translate }}
     </button>
   </div>

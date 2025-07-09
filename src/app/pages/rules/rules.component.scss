@@ -1,4 +1,4 @@
-@use 'src/app/styles/home-button.scss';
+@use 'src/app/styles/buttons.scss';
 
 .info-page {
   align-items: center;
@@ -50,9 +50,9 @@
     }
   }
 
-  .home-button {
+  .secondary-button {
     display: block;
-    margin: 0 auto;
+    margin: auto;
   }
 }
 
